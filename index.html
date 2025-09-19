@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan O'Connell | Portfolio</title>
+  <style>
+    /* ====== Base Styles ====== */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(120deg, #1a1a2e, #16213e);
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #a0a0a0;
+      animation: fadeIn 2s ease-out;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #00adb5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #eeeeee;
+    }
+
+    /* ====== Section Styles ====== */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00adb5;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .project-card {
+      background: #0f3460;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px;
+      display: inline-block;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .project-card h3 {
+      margin: 10px 0;
+      color: #eeeeee;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f3460;
+      color: #ccc;
+    }
+
+    /* ====== Animations ====== */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alan O'Connell</h1>
+    <p>Electronic Engineer | PCB Design | Embedded Systems</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Oscilloscope PCB</h3>
+      <p>Custom PCB design and simulation using Proteus.</p>
+    </div>
+    <div class="project-card">
+      <h3>Arduino Volume Knob</h3>
+      <p>Hardware + Python script for system audio control.</p>
+    </div>
+    <div class="project-card">
+      <h3>IoT Fridge Monitor</h3>
+      <p>Sensor system with MQTT data logging.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m an Electronic Engineering student at MTU, with interests in embedded systems, PCB design, and coding. This portfolio highlights my projects and links to my work.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      <a href="https://github.com/YourGitHub" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/YourLinkedIn" target="_blank">LinkedIn</a> | 
+      <a href="mailto:youremail@example.com">Email Me</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Alan O'Connell | Portfolio
+  </footer>
+</body>
+</html>
